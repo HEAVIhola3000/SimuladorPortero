@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Portero</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Librerías de MediaPipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="canvas-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="output_canvas" width="640" height="480"></canvas>
+    </div>
+
+    <div id="ControlDificultad">
+       <button id="easyBtn">FÁCIL</button>
+       <button id="mediumBtn">MEDIO</button>
+       <button id="hardBtn">DIFÍCIL</button>
+    </div>
+
+    <!-- Script del juego-->
+    <script src="script.js"></script>
+</body>
+</html>
